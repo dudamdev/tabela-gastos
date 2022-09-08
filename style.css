@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+:root {
+  --cor0: #dafdba;
+  --cor0a: #dafdba7c;
+  --cor1: #9aeba3;
+  --cor2: #45c4b0;
+  --cor3: #13678a;
+  --cor3a: #13668a7c;
+  --cor4: #012030;
+  --cor4a: #0120307c;
+  --font-headings: "Roboto Mono", monospace;
+  --font-default: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: var(--font-default);
+  background: var(--cor2);
+  background-attachment: fixed;
+  
+}
+
+
+header {
+  background-color: var(--cor4);
+  box-shadow: 4px 4px 0px 0px var(--cor4a);
+  padding: 8px 16px 16px 16px;
+  max-width: 50vw;
+  max-height: 10vh;
+  margin: 0.5vh auto;
+  text-align: center;
+  border-radius: 0px 20px;
+  color: white;
+  font-family: var(--font-headings);
+}
+
+header > h1 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+select#month {
+  padding: 2px;
+  font-family: var(--font-default);
+  border-radius: 5px;
+}
+
+.salary-section {
+  background-color: var(--cor4);
+  color: white;
+  font-family: var(--font-headings);
+  box-shadow: 4px 4px 0px 0px var(--cor4a);
+  padding: 16px;
+  margin: 3vh auto 2vh auto;
+  max-width: fit-content;
+  display: flex;
+  column-gap: 10vw;
+  align-items: center;
+}
+
+.salary-section p {
+  display: inline-block;
+  font-family: var(--font-headings);
+}
+
+.salary-section p.savings {
+  background-color: white;
+  color: black;
+  padding: 1px 50px;
+}
+
+.salary {
+  font-family: var(--font-headings);
+  padding: 2px;
+  text-align: center;
+}
+
+table {
+  max-width: 50vw;
+  margin: auto;
+  border-collapse: collapse;
+  box-shadow: 1px 1px 10px 1px var(--cor4a);
+}
+
+thead th,
+tfoot th {
+  font-family: var(--font-headings);
+  background-color: var(--cor4);
+  color: white;
+  padding: 8px;
+}
+
+.total {
+  background-color: var(--cor3);
+  text-align: center;
+  color: white;
+  font-family: var(--font-headings);
+}
+
+table td,
+th {
+  border: 1px solid black;
+  background-color: var(--cor0);
+}
+
+table input {
+  background-color: transparent;
+  color: black;
+  padding: 8px;
+  border: none;
+  border-width: 0;
+  box-shadow: none;
+  font-family: var(--font-default);
+}
+
+input.values {
+  text-align: right;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.93vh;
+  column-gap: 10px;
+}
+
+button {
+  background-color: var(--cor4);
+  color: white;
+  font-family: var(--font-headings);
+  text-transform: uppercase;
+  font-size: 1.1em;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px var(--cor4a);
+  display: table;  
+}
+
+button.csv {
+  font-size: 1em;
+  padding: 5px 15px;
+}
+
+button:hover {
+    background-color: var(--cor3);
+    transition-duration: .2s;
+}
+
+button:active {
+    transform: scale(0.95);
+}

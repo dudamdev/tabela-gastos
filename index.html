@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Gastos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sum.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tabela de Gastos</h1>
+        <label for="month">Mês: </label>
+        <select name="mes" id="month">
+            <option value="">Escolha o mês de referência</option>
+            <option value="jan">Janeiro</option>
+            <option value="fev">Fevereiro</option>
+            <option value="mar">Março</option>
+            <option value="apr">Abril</option>
+            <option value="may">Maio</option>
+            <option value="jun">Junho</option>
+            <option value="jul">Julho</option>
+            <option value="aug">Agosto</option>
+            <option value="sep">Setembro</option>
+            <option value="oct">Outubro</option>
+            <option value="nov">Novembro</option>
+            <option value="dec">Dezembro</option>
+        </select>
+    </header>
+    <main>
+        <section class="salary-section">
+            <div>
+                <label for="salary">Salário: </label>
+                <input type="text" class="salary" name="salary">
+            </div>
+            <div>
+                <p>Poupança: </p>
+                <p class="savings"></p>
+            </div>
+
+        </section>
+        <section>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Despesas</th>
+                        <th>Planejado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill1"></th>
+                        <td><input type="text" id="plan1" class="values"></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill2"></th>
+                        <td><input type="text" id="plan2" class="values"></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill3"></th>
+                        <td><input type="text" id="plan3" class="values"></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill4"></th>
+                        <td><input type="text" id="plan4" class="values"></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill5"></th>
+                        <td><input type="text" id="plan5" class="values"></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill6"></th>
+                        <td><input type="text" id="plan6" class="values"></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill7"></th>
+                        <td><input type="text" id="plan7" class="values"></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill8"></th>
+                        <td><input type="text" id="plan8" class="values"></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill9"></th>
+                        <td><input type="text" id="plan9" class="values"></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill10"></th>
+                        <td><input type="text" id="plan10" class="values"></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="bill" id="bill11"></th>
+                        <td><input type="text" id="plan11" class="values"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Totais</th>
+                        <td class="total">
+                            <p class="plan-total"></p>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="options">
+                <button onclick="clicar()">Calcular</button>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
